@@ -21,8 +21,8 @@ class Truk{
             muatan += berat;
             return "";
         } else {
-            double sisaMuatan = muatan-muatanMax;
-            System.out.println("\nTruk kelebihan muatan sebesar : "+sisaMuatan);
+            double overMuatan = muatan-muatanMax;
+            System.out.println("\nTruk kelebihan muatan sebesar : "+overMuatan);
             return "TIDAK BISA MENAMBAH MUATAN KARENA MELEBIHI BATAS MAKSIMAL\n";
         }
     }
@@ -41,11 +41,17 @@ public class MuatanTrukv2{
                 Scanner masukanMuatan = new Scanner(System.in);
                 double muatanInData = masukanMuatan.nextDouble();
                 
+                // Memanggil method tambahMuatan() dari objek truk
+                // dengan parameter muatanInData yang dimasukkan ke variabel berat pada method tersebut
                 truk.tambahMuatan(muatanInData);
             }
         }
-
+        // Memanggil method getMuatan() dari objek truk untuk mencetak total muatan
         truk.getMuatan();
+
+        // Memanggil method tambahMuatan() dari objek truk dengan parameter truk.muatan
+        // jika muatan<=1000 maka akan mencetak total muatan saja
+        // jika muatan>1000 maka akan mencetak total muatan, kelebihan muatan, dan nilai kembalian
         System.out.println(truk.tambahMuatan(truk.muatan));
     }
 }
