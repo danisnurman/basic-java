@@ -1,4 +1,4 @@
-// Import class Scanner dari package util
+// Import class Scanner dari package java util
 import java.util.Scanner;
 
 class Purchase{
@@ -13,9 +13,9 @@ class Purchase{
         return amount;
     }
 
-    // Deklarasi method isTaxable() dengan tipe data double
-    double isTaxable(){
-        // Instansiasi objek masukan dari class Scanner
+    // Deklarasi method getTaxable() dengan tipe data double
+    double getTaxable(){
+        // Instansiasi objek Scanner
         Scanner masukan = new Scanner(System.in);
 
         // Input besar amount, lalu simpan data di dalam variabel amount bertipe data double
@@ -41,7 +41,7 @@ class Purchase{
 
     // Deklarasi method getTotal() dengan tipe data double
     double getTotal(){
-        // Cetak total, nilai total diambil dari operasi pada method isTaxable()
+        // Cetak total, nilai total diambil dari operasi aritmatika pada method getTaxable()
         System.out.println("Total : "+total);
         return total;
     }
@@ -52,8 +52,8 @@ public class ProcessData2{
         // Instansiasi objek pemrosesan dari class Purchase
         Purchase pemrosesan = new Purchase();
 
-        // Memanggil method isTaxable() dari objek pemrosesan
-        pemrosesan.isTaxable();
+        // Memanggil method getTaxable() dari objek pemrosesan
+        pemrosesan.getTaxable();
 
         // Memanggil method getTotal() dari objek pemrosesan
         pemrosesan.getTotal();
