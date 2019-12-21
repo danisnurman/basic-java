@@ -1,3 +1,4 @@
+// Import class Scanner dari package java util
 import java.util.Scanner;
 
 class Truk{
