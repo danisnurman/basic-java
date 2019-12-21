@@ -15,7 +15,7 @@ class Purchase{
 
     // Deklarasi method isTaxable() dengan tipe data double
     double isTaxable(){
-        // Instansiasi objek Scanner dengan nama masukan
+        // Instansiasi objek masukan dari class Scanner
         Scanner masukan = new Scanner(System.in);
 
         // Input besar amount, lalu simpan data di dalam variabel amount bertipe data double
@@ -25,6 +25,9 @@ class Purchase{
         // Input amount true/false, lalu simpan data di dalam variabel taxable bertipe data boolean
         System.out.print("Is taxable? (true/false) : ");
         taxable = masukan.nextBoolean();
+
+        // Close scanner
+        masukan.close();
 
         if(taxable){
             // Jika kondisi taxable=true
