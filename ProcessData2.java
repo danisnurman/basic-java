@@ -5,13 +5,11 @@ class Purchase{
     double amount, total;
     boolean taxable;
 
-    // Deklarasi method getAmount() dengan tipe data double
     double getAmount(){
         System.out.println(amount);
         return amount;
     }
 
-    // Deklarasi method getTaxable() dengan tipe data double
     double getTaxable(){
         // Instansiasi objek Scanner
         Scanner masukan = new Scanner(System.in);
@@ -33,7 +31,6 @@ class Purchase{
         return total;
     }
 
-    // Deklarasi method getTotal() dengan tipe data double
     double getTotal(){
         System.out.println("Total : "+total);
         return total;
