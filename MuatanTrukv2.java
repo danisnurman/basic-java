@@ -51,7 +51,7 @@ public class MuatanTrukv2{
         truk.getMuatan();
 
         // Memanggil method tambahMuatan() dari objek truk dengan parameter truk.muatan
-        // jika muatan<=1000 maka akan mencetak total muatan saja
+        // jika muatan<=1000 maka hanya mencetak total muatan
         // jika muatan>1000 maka akan mencetak total muatan, kelebihan muatan, dan nilai kembalian
         System.out.println(truk.tambahMuatan(truk.muatan));
     }
