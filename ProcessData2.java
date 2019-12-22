@@ -5,7 +5,7 @@ class Purchase{
     double amount, total;
     boolean taxable;
 
-    double getAmount(){
+    double getUserInput(){
         Scanner masukan = new Scanner(System.in);
 
         System.out.print("Input amount : ");
@@ -20,7 +20,7 @@ class Purchase{
         return amount;
     }
 
-    double getTaxable(){
+    double getIfTaxable(){
         if(taxable){
             total=amount*1.05;
         } else {
@@ -41,10 +41,10 @@ public class ProcessData2{
         Purchase pemrosesan = new Purchase();
 
         // Memanggil method getAmount dari objek pemrosesan
-        pemrosesan.getAmount();
+        pemrosesan.getUserInput();
 
-        // Memanggil method getTaxable() dari objek pemrosesan
-        pemrosesan.getTaxable();
+        // Memanggil method getIfTaxable() dari objek pemrosesan
+        pemrosesan.getIfTaxable();
 
         // Memanggil method getTotal() dari objek pemrosesan
         pemrosesan.getTotal();
