@@ -40,7 +40,7 @@ public class ProcessData2{
         // Instansiasi objek pemrosesan dari class Purchase
         Purchase pemrosesan = new Purchase();
 
-        // Memanggil method getAmount dari objek pemrosesan
+        // Memanggil method getUserInput() dari objek pemrosesan
         pemrosesan.getUserInput();
 
         // Memanggil method getIfTaxable() dari objek pemrosesan
