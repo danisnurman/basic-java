@@ -9,7 +9,7 @@ class ProcessData1{
         System.out.print("Input amount : ");
         amount = masukan.nextDouble();
 
-        System.out.print("Is taxable? (true/false) : ");
+        System.out.print("Apakah taxable? (true/false) : ");
         taxable = masukan.nextBoolean();
 
         if (taxable){
